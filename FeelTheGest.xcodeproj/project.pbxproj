@@ -12,6 +12,7 @@
 		C1B5047C1D5894EA0023C79C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B5047A1D5894EA0023C79C /* Main.storyboard */; };
 		C1B5047E1D5894EA0023C79C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B5047D1D5894EA0023C79C /* Assets.xcassets */; };
 		C1B504811D5894EA0023C79C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B5047F1D5894EA0023C79C /* LaunchScreen.storyboard */; };
+		C1B5048A1D58D4A80023C79C /* REAME.md in Sources */ = {isa = PBXBuildFile; fileRef = C1B504891D58D4A80023C79C /* REAME.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C1B5047D1D5894EA0023C79C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1B504801D5894EA0023C79C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1B504821D5894EA0023C79C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1B504891D58D4A80023C79C /* REAME.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = REAME.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		C1B5046A1D5894EA0023C79C = {
 			isa = PBXGroup;
 			children = (
+				C1B504891D58D4A80023C79C /* REAME.md */,
 				C1B504751D5894EA0023C79C /* FeelTheGest */,
 				C1B504741D5894EA0023C79C /* Products */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1B504791D5894EA0023C79C /* ViewController.swift in Sources */,
+				C1B5048A1D58D4A80023C79C /* REAME.md in Sources */,
 				C1B504771D5894EA0023C79C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +304,7 @@
 				C1B504871D5894EA0023C79C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
