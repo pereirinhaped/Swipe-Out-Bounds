@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 	let bkgColors = [UIColor.yellow.withAlphaComponent(0.3), UIColor.blue.withAlphaComponent(0.3), UIColor.red.withAlphaComponent(0.3)]
 	
 	var MAX_PAGE: Int {
-		return bkgColors.count
+		return bkgColors.count - 1
 	}
 	let MIN_PAGE = 0
 	var CUR_PAGE = 0
@@ -24,8 +24,7 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		
 		// Set some ScrollView properties
-		mainScrollView.backgroundColor = UIColor.purple.withAlphaComponent(0.3)
-		mainScrollView.isScrollEnabled = true
+		mainScrollView.backgroundColor = UIColor.darkGray.withAlphaComponent(0.2)
 
 	}
 	
@@ -49,5 +48,22 @@ class ViewController: UIViewController {
 		mainScrollView.contentSize = CGSize(width: contentWidth, height: contentHeight)
 	}
 
+	@IBAction func detectSwipe(_ sender: UISwipeGestureRecognizer) {
+		
+		if CUR_PAGE < MAX_PAGE && sender.direction == .left {
+			moveScrollView(direction: 1)
+		}
+		
+		if CUR_PAGE > MIN_PAGE && sender.direction == .right {
+			moveScrollView(direction: -1)
+		}
+	}
+	
+	func moveScrollView(direction: Int){
+		CUR_PAGE = CUR_PAGE + direction
+		let point = CGPoint(x: mainScrollView.frame.width * CGFloat(CUR_PAGE), y: 0.0)
+		mainScrollView.setContentOffset(point, animated: true)
+	}
+	
 }
 
